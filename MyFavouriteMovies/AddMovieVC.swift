@@ -71,7 +71,6 @@ class AddMovieVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
         dismissViewControllerAnimated(true, completion: nil)
     }
     
-    
     @IBAction func createMovie(sender: AnyObject) {
             if let title = txtTitle.text where title != "" {
                 let app = UIApplication.sharedApplication().delegate as! AppDelegate

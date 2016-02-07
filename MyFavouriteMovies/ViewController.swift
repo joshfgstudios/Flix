@@ -63,8 +63,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "ToDetail" {
-            if let cell = sender as? MovieCell, row = tableView.indexPathForCell(cell)?.row, vc = segue.destinationViewController as? DetailVC {
-                vc.movie = movies[row]
+            if let cell = sender as? MovieCell, row = tableView.indexPathForCell(cell)?.row, detailVC = segue.destinationViewController as? DetailVC {
+                detailVC.movie = movies[row]
             }
         }
     }

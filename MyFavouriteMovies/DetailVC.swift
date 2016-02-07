@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class DetailVC: UIViewController {
     
@@ -33,6 +34,21 @@ class DetailVC: UIViewController {
     
     //Actions
     @IBAction func onBackPressed(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+    
+    @IBAction func onDeletePressed(sender: AnyObject) {
+        let app = UIApplication.sharedApplication().delegate as! AppDelegate
+        let context = app.managedObjectContext
+        
+        do {
+            if let entityToDelete = movie {
+                context.deleteObject(entityToDelete)
+                try context.save()
+            }
+        } catch {
+            print("Could not delete item.")
+        }
         dismissViewControllerAnimated(true, completion: nil)
     }
     

@@ -193,14 +193,27 @@
                                             <action selector="onBackPressed:" destination="QZn-7s-XZ1" eventType="touchUpInside" id="qax-hO-fgt"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kdy-rq-tZI">
+                                        <rect key="frame" x="564" y="52" width="28" height="28"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="28" id="DZn-ep-VBm"/>
+                                            <constraint firstAttribute="height" constant="28" id="bVx-h8-Zoj"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="trash"/>
+                                        <connections>
+                                            <action selector="onDeletePressed:" destination="QZn-7s-XZ1" eventType="touchUpInside" id="OiJ-qj-gjf"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.41568627450000001" green="0.79607843140000001" blue="0.60392156860000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="CjO-Px-RTF" secondAttribute="bottom" constant="8" id="7EJ-sJ-glA"/>
                                     <constraint firstAttribute="bottom" secondItem="CjO-Px-RTF" secondAttribute="bottom" constant="8" id="7yy-u7-yz5"/>
                                     <constraint firstAttribute="height" constant="88" id="DHa-xq-z5y"/>
+                                    <constraint firstAttribute="bottom" secondItem="kdy-rq-tZI" secondAttribute="bottom" constant="8" id="Emq-xO-LDC"/>
                                     <constraint firstItem="CjO-Px-RTF" firstAttribute="centerX" secondItem="6Kk-eL-lMX" secondAttribute="centerX" id="K3R-UK-rDe"/>
                                     <constraint firstAttribute="bottom" secondItem="O9p-EQ-Oue" secondAttribute="bottom" constant="8" id="Lnu-7H-2jx"/>
+                                    <constraint firstAttribute="trailing" secondItem="kdy-rq-tZI" secondAttribute="trailing" constant="8" id="V6x-yh-gAo"/>
                                     <constraint firstItem="CjO-Px-RTF" firstAttribute="centerX" secondItem="6Kk-eL-lMX" secondAttribute="centerX" id="WBv-Jt-iMj"/>
                                     <constraint firstItem="O9p-EQ-Oue" firstAttribute="leading" secondItem="6Kk-eL-lMX" secondAttribute="leading" constant="8" id="aAc-lZ-KfW"/>
                                     <constraint firstAttribute="bottom" secondItem="O9p-EQ-Oue" secondAttribute="bottom" constant="8" id="abx-sf-vck"/>
@@ -329,7 +342,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KWz-4E-Hg4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1070" y="1414"/>
+            <point key="canvasLocation" x="1070" y="1417"/>
         </scene>
         <!--Add MovieVC-->
         <scene sceneID="zFb-8b-jBP">
@@ -463,5 +476,6 @@
     <resources>
         <image name="add" width="1200" height="1200"/>
         <image name="logo" width="1113" height="482"/>
+        <image name="trash" width="560" height="608"/>
     </resources>
 </document>
